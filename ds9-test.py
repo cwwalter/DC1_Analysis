@@ -27,7 +27,6 @@ with coadd_display.Buffering():
          for source in catalog_imsim:
                  coadd_display.dot('o', source.getX(), source.getY())
 
- 
 # calexp_cmodelFlux =  calexp_src.getModelFlux()
 # print("calexp source length = ", len(calexp_cmodelFlux))
 
