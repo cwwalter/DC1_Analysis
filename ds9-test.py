@@ -15,13 +15,11 @@ coadd_src = butler.get('deepCoadd_meas', dataId=coaddId)
 
 catalog_imsim = butler.get("deepCoadd_ref", patch='17,13', tract=0,
                            immediate=True)                                                                      
-
 calexp_display = afw_display.getDisplay(frame=1)
 coadd_display = afw_display.getDisplay(frame=2)
 
 calexp_display.mtv(calexp)
 coadd_display.mtv(coadd)
-
 
 with coadd_display.Buffering():     
          for source in catalog_imsim:
